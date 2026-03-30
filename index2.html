@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toppings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <marquee direction="right" ><h1>This is pizza.</h1> </marquee>
+
+    <img src="pizza.png" alt="topping">
+
+    <h2>What is the name of this food item?</h2>
+    <form>
+    <input type="text" id="food">
+    <button onclick="func()">Check Answer</button>
+    </form>
+
+    <br><br>
+    <a href="index.html"><button>Go Back</button></a>
+
+    <script>
+    function func(){
+
+        let a = document.getElementById("food").value;
+        let b = "pizza";
+
+            if (a===b){
+                alert("yay it is correct!");
+            } else {
+                alert("you are wrong! (Ans Hint: check top line.)");
+            }
+        }
+    </script>
+</body>
+</html>
